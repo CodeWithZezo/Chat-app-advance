@@ -12,6 +12,7 @@ class MessageController {
    * @desc    Send a message
    * @access  Private
    */
+  
   sendMessage = asyncHandler(async (req: AuthRequest, res: Response, next: NextFunction) => {
     if (!req.userId) {
       return successResponse(res, null);
